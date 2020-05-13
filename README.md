@@ -1,2 +1,2 @@
 # daigoro
-DAIGORO is a clever dinasour.
+DAIGORO is a clever dinosaur.

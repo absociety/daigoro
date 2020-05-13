@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <base target="_top">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ABS申請プレビュー</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosansjapanese.css">
+  <style>
+  body{
+ background-color:rgb(239, 239, 233);
+ }
+.error{
+  color: red;
+}
+
+ h1{
+ font-family: 'Noto Sans Japanese',Roboto,Arial,sans-serif;
+ font-size: 16px;
+ font-weight: 500;
+ letter-spacing: .1px;
+ line-height: 24px;
+ color: #202124;
+ font-weight: 400;
+ width: 100%;
+ margin-top:0;
+ margin-bottom:16px;
+ }
+ table{
+ margin:auto;
+ margin-top:3vh;
+ width:90%;
+ max-width:900px;
+ border: 1px solid #dadce0;
+ border-radius: 8px;
+ background-color:#fff;
+ padding:24px;
+ }
+ td {
+ font-family: Roboto,Arial,sans-serif;
+ font-size: 14px;
+ font-weight: 400;
+ letter-spacing: .2px;
+ line-height: 20px;
+ color: #202124;
+ min-width: 0%;
+ }
+ .wrap-button{
+ width:100%;
+
+ }
+ button{
+ -webkit-appearance: none;
+ margin-top:3vh;
+ margin-bottom:15%;
+ padding:0 24px;
+ float:left;
+ font-family: 'Noto Sans Japanese',Roboto,Arial,sans-serif;
+ font-size: 14px;
+ font-weight: 500;
+ letter-spacing: 0.25px;
+ line-height: 36px;
+ background-color: #7B7A3B;
+ color: #fff;
+ border-radius:4px;
+ }
+ .button{margin:auto;width:90%;max-width:900px;}
+ input[type="submit"] {
+-webkit-appearance: none;
+ margin-top:3vh;
+ margin-bottom:15%;
+ padding:0 24px;
+ float:left;
+ font-family: 'Noto Sans Japanese',Roboto,Arial,sans-serif;
+ font-size: 14px;
+ font-weight: 500;
+ letter-spacing: 0.25px;
+ line-height: 36px;
+ background-color: #7B7A3B;
+ color: #fff;
+ border-radius:4px;
+ }
+ input[type="button"] {
+-webkit-appearance: none;
+ margin-top:3vh;
+ margin-bottom:15%;
+ padding:0 24px;
+ float:left;
+ font-family: 'Noto Sans Japanese',Roboto,Arial,sans-serif;
+ font-size: 14px;
+ font-weight: 500;
+ letter-spacing: 0.25px;
+ line-height: 36px;
+ background-color: #7B7A3B;
+ color: #fff;
+ border-radius:4px
+}
+
+
+input[type="checkbox"] { display: none; }
+
+input[type="checkbox"] + label {
+ font-weight:600;
+ display: block;
+ position: relative;
+ margin-top:20px;
+ padding-left: 35px;
+ margin-bottom: 20px;
+ cursor: pointer;
+ -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+}
+
+input[type="checkbox"] + label:last-child { margin-bottom: 0; }
+
+input[type="checkbox"] + label:before {
+ content: '';
+ display: block;
+ width: 20px;
+ height: 20px;
+ border: 1px solid #363636;
+ position: absolute;
+ left: 0;
+ top: 0;
+ opacity: .6;
+ -webkit-transition: all .12s, border-color .08s;
+ transition: all .12s, border-color .08s;
+}
+
+input[type="checkbox"]:checked + label:before {
+ width: 10px;
+ top: -5px;
+ left: 5px;
+ border-radius: 0;
+ opacity: 1;
+ border-top-color: transparent;
+ border-left-color: transparent;
+ -webkit-transform: rotate(45deg);
+ transform: rotate(45deg);
+}
+
+
+  </style>
+  </head>
+  <body>
+    <?
+     var html = getHTML().join('').replace("$$","'").replace("$$","'");
+     output.append(html);
+     Logger.log("html is set as:"+html);
+    ?>
+  </body>
+</html>
